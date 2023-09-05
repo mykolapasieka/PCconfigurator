@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bgPane" prefHeight="180.0" prefWidth="360.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdiplomawork.ItemController">
+   <children>
+      <Label fx:id="sixthLabel" layoutX="14.0" layoutY="90.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="236.0" text="---------------------------" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets top="45.0" />
+         </padding>
+      </Label>
+      <Label fx:id="fifthLabel" layoutX="14.0" layoutY="114.0" prefHeight="21.0" prefWidth="236.0" text="---------------------------" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="114.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="fourthLabel" layoutX="14.0" layoutY="93.0" prefHeight="21.0" prefWidth="236.0" text="---------------------------" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="93.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="thirdLabel" layoutX="14.0" layoutY="72.0" prefHeight="21.0" prefWidth="236.0" text="---------------------------" wrapText="true" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondLabel" layoutX="14.0" layoutY="50.0" prefHeight="21.0" prefWidth="236.0" text="---------------------------" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="120.0" fitWidth="120.0" layoutX="241.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane blendMode="SRC_ATOP" focusTraversable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="43.0" prefWidth="361.0" style="-fx-background-color: c5c5c5;">
+         <children>
+            <Label fx:id="firstLabel" layoutX="17.0" layoutY="7.0" prefHeight="36.0" prefWidth="342.0" text="---------------------------">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="seventhLabel" layoutX="10.0" layoutY="159.0" prefHeight="21.0" prefWidth="236.0" text="---------------------------">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="708.0" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdiplomawork.RegisterController">
+   <children>
+      <PasswordField fx:id="passwordField" layoutX="396.0" layoutY="77.0" promptText="Password" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="nameField" layoutX="64.0" layoutY="77.0" promptText="Name" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="surnameField" layoutX="65.0" layoutY="147.0" promptText="Surname" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="countryField" layoutX="396.0" layoutY="226.0" promptText="Country" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="repeatPasswordField" layoutX="396.0" layoutY="147.0" promptText="Repeat password" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="loginField" layoutX="65.0" layoutY="226.0" promptText="Username" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="maleRadioButton" layoutX="558.0" layoutY="301.0" mnemonicParsing="false" text="Male" textFill="#c5c5c5">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="femaleRadioButton" layoutX="407.0" layoutY="301.0" mnemonicParsing="false" text="Female" textFill="#c5c5c5" toggleGroup="$gender">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="phoneField" layoutX="65.0" layoutY="301.0" promptText="Phone number" style="-fx-background-color: #4d4d4d; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <Label fx:id="labelError" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="344.0" prefHeight="40.0" prefWidth="664.0" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="668.0" layoutY="2.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="36.0" style="-fx-background-color: #4d4d4d;" text="[x]" textFill="#c5c5c5">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Line disable="true" endX="4.0" endY="25.0" layoutX="354.0" layoutY="52.0" startX="4.0" startY="291.0" stroke="#757575" strokeDashOffset="68.0" strokeMiterLimit="50.0" />
+      <Button fx:id="returnButton" layoutX="628.0" layoutY="2.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="36.0" style="-fx-background-color: #4d4d4d;" text="↵" textFill="#c5c5c5">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Button>
+      <JFXButton fx:id="registerButton" buttonType="RAISED" layoutX="297.0" layoutY="383.0" text="Continue" textFill="WHITE" underline="true" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

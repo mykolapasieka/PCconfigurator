@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="550.0" prefWidth="470.0" scaleShape="false" style="-fx-background-color: #101010; -fx-border-color: c5c5c5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdiplomawork.HelloController">
+   <children>
+      <Label layoutX="126.0" layoutY="60.0" lineSpacing="2.0" prefHeight="69.0" prefWidth="310.0" text="PC configuration system" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="39.0" layoutY="276.0" prefHeight="49.0" prefWidth="394.0" promptText="Password" style="-fx-background-color: #101010; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="loginField" layoutX="39.0" layoutY="206.0" prefHeight="49.0" prefWidth="394.0" promptText="Username" style="-fx-background-color: #101010; -fx-border-color: c5c5c5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="logInButton" layoutX="39.0" layoutY="379.0" mnemonicParsing="false" style="-fx-background-color: c5c5c5;" text="Sign-In">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerButton" cacheShape="false" focusTraversable="false" layoutX="317.0" layoutY="387.0" mnemonicParsing="false" scaleShape="false" style="-fx-background-color: c5c5c5;" text="Register">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Button>
+      <Line endX="285.0" layoutX="143.0" layoutY="182.0" startX="-100.0" stroke="#c5c5c5" strokeWidth="4.0" />
+      <Line endX="285.0" layoutX="144.0" layoutY="350.0" startX="-100.0" stroke="#c5c5c5" strokeWidth="4.0" />
+      <Label fx:id="labelIsEmpty" layoutX="42.0" layoutY="462.0" prefHeight="35.0" prefWidth="394.0" text="Username or password are empty" textFill="WHITE" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="userNotFoundLabel" layoutX="41.0" layoutY="465.0" text="User not found" textFill="WHITE" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="PCImage" fitHeight="76.0" fitWidth="87.0" layoutX="39.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PC_image.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeButton" cancelButton="true" layoutX="423.0" layoutY="8.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="39.0" style="-fx-background-color: #101010;" text="[x]" textFill="#c5c5c5">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
